@@ -14,7 +14,7 @@
   width: 100% !important;
 }
 
-.resolu-img {
+.resolu-img  {
   width: 100%;
   max-width: 40px;
   height: auto;
@@ -29,7 +29,7 @@
   color: rgb(49, 49, 49) !important;
 }
 
-.langing-page-hero-img {
+.langing-page-hero-img, .services-hero-img{
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -42,7 +42,7 @@
   color: #fff !important; */
 }
 
-.main-content {
+.main-content, .services {
   width: 95%;
   margin: 0 auto;
 }
