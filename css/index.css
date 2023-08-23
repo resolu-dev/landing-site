@@ -1,8 +1,19 @@
-.navbar {
-  background-color: red;
-  display: flex;
+
+.container {
+  margin: 0;
 }
 
-.navs-menu {
-  display: flex;
+.main {
+  width: 100%;
+}
+
+.resolu-img {
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.p-4 {
+  padding: 0.5rem!important;
 }

@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="./raw/favicon.png" />
     <title>Resolu</title>
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
+    /> -->
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
   </head>
@@ -17,15 +32,39 @@
     <!-- Landing Page -->
     <div class="container">
       <section class="main">
-        <nav class="navbar">
-          <a><img class="resolu-img" src="./raw/resulo_logo.png" /></a>
-          <ul class="navs-menu">
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Meet the Team</li>
-            <li>Contact Us</li>
-          </ul>
-        </nav>
+        <div class="desktop-view-layout"></div>
+        <div class="mobile-view-layout">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <img class="resolu-img" src="./raw/resolu-mobile-logo.png" />
+              <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarToggleExternalContent3"
+                aria-controls="navbarToggleExternalContent3"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent3">
+            <div class="bg-light shadow-3 p-4">
+              <button class="btn btn-link btn-block border-bottom m-0">
+                Services
+              </button>
+              <button class="btn btn-link btn-block border-bottom m-0">
+                About Us
+              </button>
+              <button class="btn btn-link btn-block border-bottom m-0">
+                Meet the Team
+              </button>
+              <button class="btn btn-link btn-block m-0">Contact Us</button>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="services"></section>
       <section class="about-us"></section>
@@ -33,11 +72,16 @@
       <section class="contact-us"></section>
     </div>
 
+    <!-- MDB -->
     <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="./js/index.js"></script>
   </body>
 </html>
