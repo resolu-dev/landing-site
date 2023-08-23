@@ -50,8 +50,9 @@
   display: flex;
   flex-direction: column;
   max-width: 320px;
+  height: 300px;
   margin: 0 auto;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .last-menu-item {
@@ -67,6 +68,7 @@
 
 .service-description {
   font-size: 0.9rem;
+  padding-top: 2em
 }
 
 .reveal{
@@ -78,4 +80,9 @@
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
 }
