@@ -1,10 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
 .container {
-  margin: 0;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container-fluid {
+  align-items: center !important;
 }
 
 .main {
-  width: 100%;
+  width: 100% !important;
 }
 
 .resolu-img {
@@ -16,4 +23,26 @@
 
 .p-4 {
   padding: 0.5rem!important;
+}
+
+.button-menu-list {
+  color: rgb(49, 49, 49) !important;
+}
+
+.langing-page-hero-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.last-menu-item {
+  border-bottom: 1px solid lightgrey;
+  /* background-color: #28a745 !important;
+  color: #fff !important; */
+}
+
+.main-content {
+  width: 95%;
+  margin: 0 auto;
 }
