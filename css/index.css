@@ -11,6 +11,7 @@ body {
 }
 
 .main-section {
+  margin-top: 6em;
   background-color: #fff;
 }
 
@@ -30,37 +31,15 @@ body {
   background-color: #fff;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-} */
-
-
-/* .navbar {
-  background-color: #ffffff;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 1296px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-} */
-
 .navbar {
   background-color: #ffffff;
   color: white;
   position: fixed;
-  top: 3.3%;
+  top: 3.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 1296px;
+  /* max-width: 1296px; */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -96,8 +75,8 @@ body {
 }
 
 .btn-contact  {
-  width: 115px;
-  font-size: 0.7rem;
+  /* width: 145px; */
+  font-size: 0.8rem;
 }
 
 .hamburger div {
@@ -109,8 +88,8 @@ body {
 }
 
 .sidebar {
-  background-color: #444;
-  color: white;
+  background-color: #fff;
+  color: rgb(48, 48, 48);
   position: fixed;
   top: 0;
   right: -250px;
@@ -121,6 +100,7 @@ body {
   z-index: 2;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .sidebar.active {
@@ -139,7 +119,7 @@ body {
 }
 
 .hamburger.active div:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
 .hamburger.active div:nth-child(2),
@@ -166,4 +146,38 @@ body {
 .close-btn:hover {
   border: solid 1px rgb(134, 134, 134);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.list-nav {
+  margin-top: 1em;
+  margin-left: -1.5em;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.li-sidebar {
+  padding: 5px 10px;
+}
+
+.li-sidebar:hover {
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  background-color: rgb(192, 192, 192);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fav-icons {
+  padding-top: 0.4em;
+  padding-right: 0.3em;
+}
+
+/* --------------------- MEDIA QUERIES --------------------- */
+
+@media only screen and (min-width: 1700px) {
+
+
 }
