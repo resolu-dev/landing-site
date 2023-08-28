@@ -154,13 +154,14 @@ body {
 
 .list-nav {
   margin-top: 1em;
-  margin-left: -1.5em;
+  margin-left: -2.4em;
   text-decoration: none;
   list-style-type: none;
 }
 
 .li-sidebar {
   padding: 5px 10px;
+  color: #383838;
 }
 
 .li-sidebar:hover {
@@ -168,11 +169,16 @@ body {
   background-color: rgb(192, 192, 192);
   border-radius: 5px;
   cursor: pointer;
+  color: #383838;
 }
 
 .fav-icons {
   padding-top: 0.4em;
   padding-right: 0.3em;
+}
+
+li > a {
+  color: inherit;
 }
 
 /* --------------------- MEDIA QUERIES --------------------- */
