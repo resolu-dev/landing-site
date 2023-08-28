@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="./raw/favicon.png" />
     <title>Resolu</title>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    /> -->
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
@@ -29,180 +27,36 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
   </head>
   <body>
-    <!-- Landing Page -->
-    <main class="container">
-      <section class="main">
-        <div class="desktop-view-layout"></div>
-        <div class="mobile-view-layout">
-          <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <img class="resolu-img" src="./raw/resolu-mobile-logo.png" />
-              <h3
-                style="
-                  margin: 0 auto;
-                  width: 70%;
-                  text-align: center;
-                  font-family: 'Ubuntu', sans-serif;
-                  font-weight: bold;
-                "
-              >
-                Resolu
-              </h3>
-              <button
-                class="navbar-toggler ms-auto"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarToggleExternalContent3"
-                aria-controls="navbarToggleExternalContent3"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-            </div>
-          </nav>
-          <div class="collapse" id="navbarToggleExternalContent3">
-            <div class="bg-light shadow-3 p-4">
-              <button
-                class="btn btn-link btn-block button-menu-list border-bottom m-0"
-              >
-                Solutions
-              </button>
-              <button
-                class="btn btn-link btn-block button-menu-list border-bottom m-0"
-              >
-                Our Projects
-              </button>
-              <button
-                class="btn btn-link btn-block button-menu-list border-bottom m-0"
-              >
-                Meet the Team
-              </button>
-              <button
-                class="btn btn-link btn-block button-menu-list border-bottom m-0"
-              >
-                About Us
-              </button>
-              <button
-                class="btn btn-link btn-block button-menu-list m-0 last-menu-item"
-              >
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="main-content">
-          <img
-            class="langing-page-hero-img"
-            src="./raw/landing_page_hero.jpg"
-          />
-          <h2 style="text-align: left">
-            Elevate Your Business in the Digital Age with Resolu's Solutions
-          </h2>
-
-          <p style="margin-top: 1.5em; font-size: 0.9rem">
-            At Resolu, we believe in the power of resolution. We understand that
-            the challenges you face are not just obstacles; they're
-            opportunities waiting to be harnessed. Our name embodies our
-            unwavering commitment to delivering innovative solutions...
-          </p>
-          <button
-            class="btn"
-            style="
-              margin-top: 1em;
-              border-radius: 20px;
-              background-color: #548eda;
-              color: #fff;
-            "
-          >
-            Learn more
-          </button>
-          <button
-            class="btn"
-            style="
-              margin-top: 1em;
-              border-radius: 20px;
-              background-color: #28a745;
-              color: #fff;
-            "
-          >
-            Free 30 minutes Consultation
-          </button>
-        </div>
-      </section>
-      <!-- <hr /> -->
-      <section class="services" style="margin-top: 1.5em">
-        <div class="services-content">
-          <img class="services-hero-img" src="./raw/services-bg-img.jpg" />
-          <h3 style="text-align: center; margin-bottom: 1em">Our Services</h3>
-          <div class="services-list">
-            <div class="block-services reveal">
-              <h6 style="text-align: center">Web Development</h6>
-              <img
-                class="block-img-services"
-                src="./raw/web-development-service-img.jpg"
-              />
-              <p class="service-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis ducimus numquam saepe exercitationem
-              </p>
-            </div>
-            <div class="block-services reveal">
-              <h6 style="text-align: center">Desktop App Development</h6>
-              <img
-                class="block-img-services"
-                src="./raw/desktop-dev-service.jpg"
-              />
-              <p class="service-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis ducimus numquam saepe exercitationem
-              </p>
-            </div>
-            <div class="block-services reveal">
-              <h6 style="text-align: center">Chatbot Development</h6>
-              <img
-                class="block-img-services"
-                src="./raw/chatbot-service-img.jpg"
-              />
-              <p class="service-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis ducimus numquam saepe exercitationem
-              </p>
-            </div>
-            <div class="block-services reveal">
-              <h6 style="text-align: center">Email Marketing</h6>
-              <img
-                class="block-img-services"
-                src="./raw/email-marketing-service.jpg"
-              />
-              <p class="service-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis ducimus numquam saepe exercitationem
-              </p>
+    <div class="container">
+      <section class="nav-section">
+        <div class="navbar">
+          <img id="hero-logo" src="./raw/resolu-mobile-logo.png" />
+          <div class="navbar-right">
+            <button class="btn btn-success btn-contact">Contact Us</button>
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="about-us">
-        <!-- DITO KA EVAN MAG ADD NG CODE -->
+      <div class="sidebar">
+        <span class="close-btn">&times;</span>
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+      </div>
+      <section class="main-section">
+        <div class="overlay"></div>
+        <section class="solutions-section">Test</section>
+        <section class="meetTheTeam-section">Test</section>
+        <section class="aboutUs-section">Test</section>
+        <section class="contactUs-section">Test</section>
+        <footer>FOOTER</footer>
       </section>
-      <section class="meet-the-team">
-        <!-- DITO KA EVAN MAG ADD NG CODE -->
-      </section>
-      <section class="projects"></section>
-      <section class="contact-us"></section>
-    </main>
-
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
-    ></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script> -->
+    </div>
     <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
