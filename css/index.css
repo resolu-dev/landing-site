@@ -29,6 +29,9 @@ body {
 
 .solutions-section {
   background-color: #fff;
+  text-align: center;
+  width: 100%;
+  
 }
 
 .meetTheTeam-section {
@@ -195,24 +198,44 @@ li > a {
 
 .content-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
+.content-img-blocks {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solutions-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.solutions-block {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 15px 10px 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  max-width: 340px;
+}
+
+.solution-block-p {
+  padding-top: 0.8em;
+  font-size: 0.9rem;
+}
+
 /* --------------------- MEDIA QUERIES --------------------- */
 
 @media only screen and (min-width: 450px) {
-
-  .content-img {
-    max-width: 550px;
-    background-size: cover;
-  }
-
-}
-
-@media only screen and (min-width: 650px) {
 
   .content-img {
     max-width: 600px;
@@ -221,11 +244,89 @@ li > a {
 
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 650px) {
+
+  .content-img {
+    max-width: 600px;
+    background-size: cover;
+  }
+
+  .solutions-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 950px) {
+  
+  .content-img {
+    max-width: 650px;
+    background-size: cover;
+  }
+
+  .solutions-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
 
   .content-img {
     max-width: 650px;
     background-size: cover;
   }
 
+  .solutions-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
 }
+
+
+@media only screen and (max-width: 1600px) {
+
+  .content-img {
+    max-width: 650px;
+    background-size: cover;
+  }
+
+  .solutions-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .solutions-block {
+    max-width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 2000px) {
+
+  .content-img {
+    max-width: 650px;
+    background-size: cover;
+  }
+
+  .solutions-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .solutions-block {
+    max-width: 300px;
+  }
+
+}
+
